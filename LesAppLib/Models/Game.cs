@@ -10,6 +10,10 @@ namespace LesAppLib.Models
     public class Game
     {
         /// <summary>
+        /// ID
+        /// </summary>
+        public int Id { get; set; }
+        /// <summary>
         /// Назва гри
         /// </summary>
         public string Name { get; set; }
@@ -24,20 +28,20 @@ namespace LesAppLib.Models
         /// <summary>
         /// Розробники
         /// </summary>
-        public ICollection<Developer> Developers { get; set; }
+        public virtual ICollection<Developer> Developers { get; set; }
         /// <summary>
         /// Платформи
         /// </summary>
-        public ICollection<Platform> Platforms { get; set; }
+        public virtual ICollection<Platform> Platforms { get; set; }
         /// <summary>
         /// Директора
         /// </summary>
-        public ICollection<Director> Directors { get; set; }
+        public virtual ICollection<Director> Directors { get; set; }
 
         /// <summary>
         /// Серія
         /// </summary>
-        public NFS Series { get; set; }
+        public NFS NFS { get; set; }
 
         public Game()
         {
@@ -45,6 +49,9 @@ namespace LesAppLib.Models
             Platforms = new List<Platform>();
             Directors = new List<Director>();
         }
+
+        public override string ToString()
+            => $"Game: {Name}, was realesed {Release.ToShortDateString()} on {Platforms.Count} platforms";
 
     }
 }

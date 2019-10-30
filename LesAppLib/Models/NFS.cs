@@ -15,6 +15,10 @@ namespace LesAppLib.Models
     public class NFS
     {
         /// <summary>
+        /// ID
+        /// </summary>
+        public int Id { get; set; }
+        /// <summary>
         /// Логотип
         /// </summary>
         public string TypeFace { get; set; }
@@ -29,11 +33,14 @@ namespace LesAppLib.Models
         /// <summary>
         /// Гра
         /// </summary>
-        public virtual ICollection<Game> Games { get; set; }
-
+        public ICollection<Game> Games { get; set; }
+        
         public NFS()
         {
             Games = new List<Game>();
         }
+
+        public override string ToString()
+            => $"Game publisher: {Publisher} in {Genre} genre, presented {Games.Count} games";
     }
 }

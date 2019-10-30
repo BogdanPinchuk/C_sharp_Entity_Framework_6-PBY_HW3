@@ -27,11 +27,15 @@ namespace LesAppLib.Models.Add
         /// <summary>
         /// Платформа
         /// </summary>
-        public virtual ICollection<Platform> Platforms { get; set; }
+        public ICollection<Platform> Platforms { get; set; }
 
         public Critic()
         {
             Platforms = new List<Platform>();
         }
+
+        public override string ToString()
+            => $"Name of critic: {Name}, rate in {Scores * 100:N0}";
+        
     }
 }

@@ -40,7 +40,7 @@ namespace LesAppCreateDB.Context
         /// <summary>
         /// Платформи
         /// </summary>
-        public  virtual DbSet<Platform> Platforms { get; set; }
+        public virtual DbSet<Platform> Platforms { get; set; }
         /// <summary>
         /// Ігри
         /// </summary>
@@ -48,7 +48,7 @@ namespace LesAppCreateDB.Context
         /// <summary>
         /// Серія ігр NFS
         /// </summary>
-        public virtual DbSet<NFS> EA { get; set; }
+        public virtual DbSet<NFS> NFS { get; set; }
 
 
     }

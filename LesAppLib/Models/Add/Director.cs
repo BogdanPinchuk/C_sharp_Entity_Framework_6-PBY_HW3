@@ -23,11 +23,14 @@ namespace LesAppLib.Models.Add
         /// <summary>
         /// Ігри
         /// </summary>
-        public virtual ICollection<Game> Games { get; set; }
+        public ICollection<Game> Games { get; set; }
 
         public Director()
         {
             Games = new List<Game>();
         }
+
+        public override string ToString()
+            => $"Name of director: {FullName}";
     }
 }

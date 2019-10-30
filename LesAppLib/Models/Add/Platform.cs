@@ -23,7 +23,7 @@ namespace LesAppLib.Models.Add
         /// <summary>
         /// Ігри
         /// </summary>
-        public virtual ICollection<Game> Games { get; set; }
+        public ICollection<Game> Games { get; set; }
         /// <summary>
         /// Критики
         /// </summary>
@@ -34,5 +34,8 @@ namespace LesAppLib.Models.Add
             Games = new List<Game>();
             Critics = new List<Critic>();
         }
+
+        public override string ToString()
+            => $"Platform for game: {Name}, has {Critics.Count} critics";
     }
 }
