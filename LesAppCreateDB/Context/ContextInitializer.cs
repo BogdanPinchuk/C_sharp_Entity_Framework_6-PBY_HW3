@@ -22,6 +22,16 @@ namespace LesAppCreateDB.Context
                 new Developer() { FullName = "EA Black Box" },
                 new Developer() { FullName = "Rovio Mobile" },
                 new Developer() { FullName = "Global VR" },     //5
+                new Developer() { FullName = "Exient Entertainment" },
+                new Developer() { FullName = "Firebrand Games" },
+                new Developer() { FullName = "Slightly Mad Studiost" },
+                new Developer() { FullName = "EA Bright Light" },
+                new Developer() { FullName = "EA Redwood Shores" }, //10
+                new Developer() { FullName = "EA Montreal" },
+                new Developer() { FullName = "Quicklime Games" },
+                new Developer() { FullName = "EA Singapore" },
+                new Developer() { FullName = "Criterion Games" },
+                new Developer() { FullName = "Straight Right" },   //15
             };
 
             // створення критиків
@@ -77,6 +87,29 @@ namespace LesAppCreateDB.Context
                 new Critic() { Name = "GameRankings", Scores = 69.12/100 },
                 new Critic() { Name = "GameRankings", Scores = 63.94/100 },
                 new Critic() { Name = "GameRankings", Scores = 60.64/100 },
+                new Critic() { Name = "GameRankings", Scores = 60.38/100 }, //50
+                new Critic() { Name = "GameRankings", Scores = 64.58/100 },
+                new Critic() { Name = "GameRankings", Scores = 62.66/100 },
+                new Critic() { Name = "GameRankings", Scores = 61.70/100 },
+                new Critic() { Name = "GameRankings", Scores = 58.20/100 },
+                new Critic() { Name = "GameRankings", Scores = 58.00/100 }, //55
+                new Critic() { Name = "GameRankings", Scores = 53.92/100 },
+                new Critic() { Name = "GameRankings", Scores = 50.50/100 },
+                new Critic() { Name = "GameRankings", Scores = 83.59/100 },
+                new Critic() { Name = "GameRankings", Scores = 82.84/100 },
+                new Critic() { Name = "GameRankings", Scores = 82.36/100 }, //60
+                new Critic() { Name = "GameRankings", Scores = 69.60/100 },
+                new Critic() { Name = "GameRankings", Scores = 73.31/100 },
+                new Critic() { Name = "GameRankings", Scores = 71.71/100 },
+                new Critic() { Name = "GameRankings", Scores = 63.83/100 },
+                new Critic() { Name = "GameRankings", Scores = 88.86/100 }, //65
+                new Critic() { Name = "GameRankings", Scores = 87.21/100 },
+                new Critic() { Name = "GameRankings", Scores = 86.19/100 },
+                new Critic() { Name = "GameRankings", Scores = 45.83/100 },
+                new Critic() { Name = "GameRankings", Scores = 83.08/100 },
+                new Critic() { Name = "GameRankings", Scores = 81.91/100 }, //70
+                new Critic() { Name = "GameRankings", Scores = 80.40/100 },
+                new Critic() { Name = "GameRankings", Scores = 70.00/100 },
             };
             Critic[] mc = new Critic[]
             {
@@ -120,7 +153,29 @@ namespace LesAppCreateDB.Context
                 new Critic() { Name = "Metacritic", Scores = 72.00/100 },
                 new Critic() { Name = "Metacritic", Scores = 70.00/100 },
                 new Critic() { Name = "Metacritic", Scores = 61.00/100 },
-                new Critic() { Name = "Metacritic", Scores = 57.00/100 },  //40
+                new Critic() { Name = "Metacritic", Scores = 62.00/100 },  //40
+                new Critic() { Name = "Metacritic", Scores = 57.00/100 },
+                new Critic() { Name = "Metacritic", Scores = 64.00/100 },
+                new Critic() { Name = "Metacritic", Scores = 59.00/100 },
+                new Critic() { Name = "Metacritic", Scores = 65.00/100 },
+                new Critic() { Name = "Metacritic", Scores = 59.00/100 },  //45
+                new Critic() { Name = "Metacritic", Scores = 54.00/100 },
+                new Critic() { Name = "Metacritic", Scores = 52.00/100 },
+                new Critic() { Name = "Metacritic", Scores = 84.00/100 },
+                new Critic() { Name = "Metacritic", Scores = 83.00/100 },
+                new Critic() { Name = "Metacritic", Scores = 83.00/100 },  //50
+                new Critic() { Name = "Metacritic", Scores = 69.00/100 },
+                new Critic() { Name = "Metacritic", Scores = 69.00/100 },
+                new Critic() { Name = "Metacritic", Scores = 70.00/100 },
+                new Critic() { Name = "Metacritic", Scores = 62.00/100 },
+                new Critic() { Name = "Metacritic", Scores = 89.00/100 },  //55
+                new Critic() { Name = "Metacritic", Scores = 88.00/100 },
+                new Critic() { Name = "Metacritic", Scores = 86.00/100 },
+                new Critic() { Name = "Metacritic", Scores = 50.00/100 },
+                new Critic() { Name = "Metacritic", Scores = 84.00/100 },
+                new Critic() { Name = "Metacritic", Scores = 82.00/100 },  //60
+                new Critic() { Name = "Metacritic", Scores = 81.00/100 },
+                new Critic() { Name = "Metacritic", Scores = 64.00/100 },
             };
 
             // створення платформ
@@ -353,7 +408,7 @@ namespace LesAppCreateDB.Context
                 {
                     Name = "Wii",
                     Critics = new Critic[] { gr[43], mc[34] },
-                },
+                },  //45
                 new Platform()
                 {
                     Name = "Mac OS X",
@@ -376,7 +431,7 @@ namespace LesAppCreateDB.Context
                 {
                     Name = "Xbox 360",
                     Critics = new Critic[] { gr[46], mc[37] },
-                },
+                },  //50
                 new Platform()
                 {
                     Name = "Microsoft Windows",
@@ -391,6 +446,121 @@ namespace LesAppCreateDB.Context
                 {
                     Name = "PlayStation 2",
                     Critics = new Critic[] { gr[49], mc[40] },
+                },
+                new Platform()
+                {
+                    Name = "PlayStation Portable",
+                    Critics = new Critic[] { gr[50], mc[41] },
+                },
+                new Platform()
+                {
+                    Name = "Xbox 360",
+                    Critics = new Critic[] { gr[51], mc[42] },
+                },  //55
+                new Platform()
+                {
+                    Name = "PlayStation 3",
+                    Critics = new Critic[] { gr[52], mc[43] },
+                },
+                new Platform()
+                {
+                    Name = "Microsoft Windows",
+                    Critics = new Critic[] { gr[53], mc[44] },
+                },
+                new Platform()
+                {
+                    Name = "Nintendo DS",
+                    Critics = new Critic[] { gr[54], mc[45] },
+                },
+                new Platform()
+                {
+                    Name = "PlayStation 2",
+                    Critics = new Critic[] { gr[55] },
+                },
+                new Platform()
+                {
+                    Name = "Wii",
+                    Critics = new Critic[] { gr[56], mc[46] },
+                },  //60
+                new Platform()
+                {
+                    Name = "PlayStation Portable",
+                    Critics = new Critic[] { gr[57], mc[47] },
+                },
+                new Platform()
+                {
+                    Name = "PlayStation 3",
+                    Critics = new Critic[] { gr[58], mc[48] },
+                },
+                new Platform()
+                {
+                    Name = "Xbox 360",
+                    Critics = new Critic[] { gr[59], mc[49] },
+                },
+                new Platform()
+                {
+                    Name = "Microsoft Windows",
+                    Critics = new Critic[] { gr[60], mc[50] },
+                },
+                new Platform()
+                {
+                    Name = "PlayStation Portable",
+                    Critics = new Critic[] { gr[61], mc[51] },
+                },  //65
+                new Platform()
+                {
+                    Name = "Wii",
+                    Critics = new Critic[] { gr[62], mc[52] },
+                },
+                new Platform()
+                {
+                    Name = "Nintendo DS",
+                    Critics = new Critic[] { gr[63], mc[53] },
+                },
+                new Platform()
+                {
+                    Name = "Microsoft Windows",
+                    Critics = new Critic[] { gr[64], mc[54] },
+                },
+                new Platform()
+                {
+                    Name = "PlayStation 3",
+                    Critics = new Critic[] { gr[65], mc[55] },
+                },
+                new Platform()
+                {
+                    Name = "Xbox 360",
+                    Critics = new Critic[] { gr[66], mc[56] },
+                },  //70
+                new Platform()
+                {
+                    Name = "Microsoft Windows",
+                    Critics = new Critic[] { gr[67], mc[57] },
+                },
+                new Platform()
+                {
+                    Name = "Wii",
+                    Critics = new Critic[] { gr[68], mc[58] },
+                },
+                new Platform()
+                {
+                    Name = "Microsoft Windows",
+                    Critics = new Critic[] { gr[69], mc[59] },
+                },
+                new Platform()
+                {
+                    Name = "Xbox 360",
+                    Critics = new Critic[] { gr[70], mc[60] },
+                },
+                new Platform()
+                {
+                    Name = "PlayStation 3",
+                    Critics = new Critic[] { gr[71], mc[61] },
+                },  //75
+                new Platform()
+                {
+                    Name = "Wii",
+                    Critics = new Critic[] { gr[72], mc[62] },
                 },
             };
 
@@ -410,7 +580,7 @@ namespace LesAppCreateDB.Context
                         platforms[3],
                         platforms[4],
                     },
-                },
+                },  //0
                 new Game()
                 {
                     Name = "Need for Speed II",
@@ -489,7 +659,7 @@ namespace LesAppCreateDB.Context
                         platforms[16],
                         platforms[17],
                     },
-                },
+                },  //5
                 new Game()
                 {
                     Name = "Need for Speed: Underground",
@@ -572,12 +742,127 @@ namespace LesAppCreateDB.Context
                 },
                 new Game()
                 {
-                    Name = "Need for Speed: Carbon",
-                    Release = new DateTime(2006, 10, 30),
+                    Name = "Need for Speed: ProStreet",
+                    Release = new DateTime(2007, 11, 14),
                     Developers = new Developer[] { developers[3] },
                     Platforms = new Platform[]
                     {
                         platforms[48],
+                        platforms[49],
+                        platforms[50],
+                        platforms[51],
+                        platforms[52],
+                        platforms[53],
+                        platforms[54],
+                    },
+                },  //10
+                new Game()
+                {
+                    Name = "Need for Speed: Undercover",
+                    Release = new DateTime(2008, 11, 18),
+                    Developers = new Developer[]
+                    {
+                        developers[3],
+                        developers[6],
+                        developers[7],
+                    },
+                    Platforms = new Platform[]
+                    {
+                        platforms[55],
+                        platforms[56],
+                        platforms[57],
+                        platforms[58],
+                        platforms[59],
+                        platforms[60],
+                        platforms[61],
+                    },
+                },
+                new Game()
+                {
+                    Name = "Need for Speed: Shift",
+                    Release = new DateTime(2009, 09, 15),
+                    Developers = new Developer[]
+                    {
+                        developers[3],
+                        developers[8],
+                        developers[9],
+                        developers[10],
+                    },
+                    Platforms = new Platform[]
+                    {
+                        platforms[62],
+                        platforms[63],
+                        platforms[64],
+                        platforms[65],
+                    },
+                },
+                new Game()
+                {
+                    Name = "Need for Speed: Nitro",
+                    Release = new DateTime(2009, 11, 03),
+                    Developers = new Developer[]
+                    {
+                        developers[7],
+                        developers[11],
+                    },
+                    Platforms = new Platform[]
+                    {
+                        platforms[66],
+                        platforms[67],
+                    },
+                },
+                new Game()
+                {
+                    Name = "Need for Speed: World",
+                    Release = new DateTime(2010, 07, 27),
+                    Developers = new Developer[]
+                    {
+                        developers[12],
+                        developers[13],
+                    },
+                    Platforms = new Platform[] { platforms[68] },
+                },
+                new Game()
+                {
+                    Name = "Need for Speed: Hot Pursuit 2010",
+                    Release = new DateTime(2010, 11, 16),
+                    Developers = new Developer[] { developers[12] },
+                    Platforms = new Platform[]
+                    {
+                        platforms[69],
+                        platforms[70],
+                        platforms[71],
+                        platforms[72],
+                    },
+                },
+                new Game()
+                {
+                    Name = "Need for Speed: Shift 2 Unleashed",
+                    Release = new DateTime(2011, 03, 29),
+                    Developers = new Developer[]
+                    {
+                        developers[8],
+                        developers[15],
+                    },
+                    Platforms = new Platform[]
+                    {
+                        platforms[73],
+                        platforms[74],
+                        platforms[75],
+                    },
+                },
+                new Game()
+                {
+                    Name = "Need for Speed: The Run",
+                    Release = new DateTime(2011, 11, 15),
+                    Developers = new Developer[]
+                    {
+                        developers[3],
+                        developers[7],
+                    },
+                    Platforms = new Platform[]
+                    {
+                        platforms[76],
                     },
                 },
             };
