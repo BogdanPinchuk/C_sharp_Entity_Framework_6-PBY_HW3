@@ -33,12 +33,13 @@ namespace LesAppCreateDB.Context
                 new Developer() { FullName = "Criterion Games" },
                 new Developer() { FullName = "Straight Right" },   //15
                 new Developer() { FullName = "Ghost Games" },
+                new Developer() { FullName = "Firemonkeys Studios" },
             };
 
             // створення критиків
             Critic[] gr = new Critic[]
             {
-                new Critic() { Name = "GameRankings", Scores = 83.00/100 },    //0
+                new Critic() { Name = "GameRankings", Scores = 83.00/100 }, //0
                 new Critic() { Name = "GameRankings", Scores = 68.50/100 },
                 new Critic() { Name = "GameRankings", Scores = 95.00/100 },
                 new Critic() { Name = "GameRankings", Scores = 71.39/100 },
@@ -125,6 +126,13 @@ namespace LesAppCreateDB.Context
                 new Critic() { Name = "GameRankings", Scores = 79.08/100 },
                 new Critic() { Name = "GameRankings", Scores = 73.67/100 }, //85
                 new Critic() { Name = "GameRankings", Scores = 71.43/100 },
+                new Critic() { Name = "GameRankings", Scores = 72.00/100 },
+                new Critic() { Name = "GameRankings", Scores = 61.00/100 },
+                new Critic() { Name = "GameRankings", Scores = 66.44/100 },
+                new Critic() { Name = "GameRankings", Scores = 66.12/100 }, //90
+                new Critic() { Name = "GameRankings", Scores = 53.00/100 },
+                new Critic() { Name = "GameRankings", Scores = 59.00/100 },
+                new Critic() { Name = "GameRankings", Scores = 56.81/100 },
             };
             Critic[] mc = new Critic[]
             {
@@ -205,6 +213,13 @@ namespace LesAppCreateDB.Context
                 new Critic() { Name = "Metacritic", Scores = 75.00/100 },
                 new Critic() { Name = "Metacritic", Scores = 76.00/100 },  //75
                 new Critic() { Name = "Metacritic", Scores = 76.00/100 },
+                new Critic() { Name = "Metacritic", Scores = 67.00/100 },
+                new Critic() { Name = "Metacritic", Scores = 68.00/100 },
+                new Critic() { Name = "Metacritic", Scores = 66.00/100 },
+                new Critic() { Name = "Metacritic", Scores = 65.00/100 },  //80
+                new Critic() { Name = "Metacritic", Scores = 62.00/100 },
+                new Critic() { Name = "Metacritic", Scores = 61.00/100 },
+                new Critic() { Name = "Metacritic", Scores = 61.00/100 },
             };
 
             // створення платформ
@@ -661,6 +676,53 @@ namespace LesAppCreateDB.Context
                     Name = "Xbox 360",
                     Critics = new Critic[] { gr[86], mc[76] },
                 },  //90
+                new Platform()
+                {
+                    Name = "iOS",
+                    Critics = new Critic[] { gr[87], mc[77] },
+                },
+                new Platform()
+                {
+                    Name = "Microsoft Windows",
+                    Critics = new Critic[] { gr[88], mc[78] },
+                },
+                new Platform()
+                {
+                    Name = "PlayStation 4",
+                    Critics = new Critic[] { gr[89], mc[79] },
+                },
+                new Platform()
+                {
+                    Name = "Xbox One",
+                    Critics = new Critic[] { gr[90], mc[80] },
+                },
+                new Platform()
+                {
+                    Name = "Microsoft Windows",
+                    Critics = new Critic[] { gr[91], mc[81] },
+                },  //95
+                new Platform()
+                {
+                    Name = "PlayStation 4",
+                    Critics = new Critic[] { gr[92], mc[82] },
+                },
+                new Platform()
+                {
+                    Name = "Xbox One",
+                    Critics = new Critic[] { gr[93], mc[83] },
+                },
+                new Platform()
+                {
+                    Name = "Microsoft Windows",
+                },
+                new Platform()
+                {
+                    Name = "PlayStation 4",
+                },
+                new Platform()
+                {
+                    Name = "Xbox One",
+                },  //100
             };
 
             // створення БД ігор
@@ -994,6 +1056,49 @@ namespace LesAppCreateDB.Context
                         platforms[88],
                         platforms[89],
                         platforms[90],
+                    },
+                },
+                new Game()
+                {
+                    Name = "Need for Speed: No Limits",
+                    Release = new DateTime(2015, 09, 30),
+                    Developers = new Developer[] { developers[16] },
+                    Platforms = new Platform[] { platforms[91] },
+                },
+                new Game()
+                {
+                    Name = "Need for Speed: 2015",
+                    Release = new DateTime(2015, 11, 03),
+                    Developers = new Developer[] { developers[16] },
+                    Platforms = new Platform[]
+                    {
+                        platforms[92],
+                        platforms[93],
+                        platforms[94],
+                    },
+                },
+                new Game()
+                {
+                    Name = "Need for Speed: Payback",
+                    Release = new DateTime(2017, 11, 10),
+                    Developers = new Developer[] { developers[16] },
+                    Platforms = new Platform[]
+                    {
+                        platforms[95],
+                        platforms[96],
+                        platforms[97],
+                    },
+                },
+                new Game()
+                {
+                    Name = "Need for Speed: Heat",
+                    Release = new DateTime(2019, 11, 08),
+                    Developers = new Developer[] { developers[16] },
+                    Platforms = new Platform[]
+                    {
+                        platforms[98],
+                        platforms[99],
+                        platforms[100],
                     },
                 },
             };
