@@ -32,6 +32,7 @@ namespace LesAppCreateDB.Context
                 new Developer() { FullName = "EA Singapore" },
                 new Developer() { FullName = "Criterion Games" },
                 new Developer() { FullName = "Straight Right" },   //15
+                new Developer() { FullName = "Ghost Games" },
             };
 
             // створення критиків
@@ -110,6 +111,20 @@ namespace LesAppCreateDB.Context
                 new Critic() { Name = "GameRankings", Scores = 81.91/100 }, //70
                 new Critic() { Name = "GameRankings", Scores = 80.40/100 },
                 new Critic() { Name = "GameRankings", Scores = 70.00/100 },
+                new Critic() { Name = "GameRankings", Scores = 69.92/100 },
+                new Critic() { Name = "GameRankings", Scores = 68.20/100 },
+                new Critic() { Name = "GameRankings", Scores = 64.04/100 }, //75
+                new Critic() { Name = "GameRankings", Scores = 60.14/100 },
+                new Critic() { Name = "GameRankings", Scores = 86.46/100 },
+                new Critic() { Name = "GameRankings", Scores = 85.09/100 },
+                new Critic() { Name = "GameRankings", Scores = 83.44/100 },
+                new Critic() { Name = "GameRankings", Scores = 83.05/100 }, //80
+                new Critic() { Name = "GameRankings", Scores = 81.50/100 },
+                new Critic() { Name = "GameRankings", Scores = 79.00/100 },
+                new Critic() { Name = "GameRankings", Scores = 80.59/100 },
+                new Critic() { Name = "GameRankings", Scores = 79.08/100 },
+                new Critic() { Name = "GameRankings", Scores = 73.67/100 }, //85
+                new Critic() { Name = "GameRankings", Scores = 71.43/100 },
             };
             Critic[] mc = new Critic[]
             {
@@ -176,6 +191,20 @@ namespace LesAppCreateDB.Context
                 new Critic() { Name = "Metacritic", Scores = 82.00/100 },  //60
                 new Critic() { Name = "Metacritic", Scores = 81.00/100 },
                 new Critic() { Name = "Metacritic", Scores = 64.00/100 },
+                new Critic() { Name = "Metacritic", Scores = 68.00/100 },
+                new Critic() { Name = "Metacritic", Scores = 65.00/100 },
+                new Critic() { Name = "Metacritic", Scores = 64.00/100 },  //65
+                new Critic() { Name = "Metacritic", Scores = 69.00/100 },
+                new Critic() { Name = "Metacritic", Scores = 86.00/100 },
+                new Critic() { Name = "Metacritic", Scores = 84.00/100 },
+                new Critic() { Name = "Metacritic", Scores = 79.00/100 },
+                new Critic() { Name = "Metacritic", Scores = 84.00/100 },  //70
+                new Critic() { Name = "Metacritic", Scores = 78.00/100 },
+                new Critic() { Name = "Metacritic", Scores = 80.00/100 },
+                new Critic() { Name = "Metacritic", Scores = 80.00/100 },
+                new Critic() { Name = "Metacritic", Scores = 75.00/100 },
+                new Critic() { Name = "Metacritic", Scores = 76.00/100 },  //75
+                new Critic() { Name = "Metacritic", Scores = 76.00/100 },
             };
 
             // створення платформ
@@ -562,6 +591,76 @@ namespace LesAppCreateDB.Context
                     Name = "Wii",
                     Critics = new Critic[] { gr[72], mc[62] },
                 },
+                new Platform()
+                {
+                    Name = "Xbox 360",
+                    Critics = new Critic[] { gr[73], mc[63] },
+                },
+                new Platform()
+                {
+                    Name = "Nintendo 3DS",
+                    Critics = new Critic[] { gr[74], mc[64] },
+                },
+                new Platform()
+                {
+                    Name = "PlayStation 3",
+                    Critics = new Critic[] { gr[75], mc[65] },
+                },
+                new Platform()
+                {
+                    Name = "Microsoft Windows",
+                    Critics = new Critic[] { gr[76], mc[66] },
+                },  //80
+                new Platform()
+                {
+                    Name = "Wii U",
+                    Critics = new Critic[] { gr[77], mc[67] },
+                },
+                new Platform()
+                {
+                    Name = "PlayStation 3",
+                    Critics = new Critic[] { gr[78], mc[68] },
+                },
+                new Platform()
+                {
+                    Name = "PS Vita",
+                    Critics = new Critic[] { gr[79], mc[69] },
+                },
+                new Platform()
+                {
+                    Name = "Xbox 360",
+                    Critics = new Critic[] { gr[80], mc[70] },
+                },
+                new Platform()
+                {
+                    Name = "Microsoft Windows",
+                    Critics = new Critic[] { gr[81], mc[71] },
+                },  //85
+                new Platform()
+                {
+                    Name = "PlayStation 3",
+                    Critics = new Critic[] { gr[82], mc[72] },
+                },
+                new Platform()
+                {
+                    Name = "PlayStation 4",
+                    Critics = new Critic[] { gr[83], mc[73] },
+                },
+                new Platform()
+                {
+                    Name = "Xbox One",
+                    Critics = new Critic[] { gr[84], mc[74] },
+                },
+                new Platform()
+                {
+                    Name = "Microsoft Windows",
+                    Critics = new Critic[] { gr[85], mc[75] },
+                },
+                new Platform()
+                {
+                    Name = "Xbox 360",
+                    Critics = new Critic[] { gr[86], mc[76] },
+                },  //90
             };
 
             // створення БД ігор
@@ -834,7 +933,7 @@ namespace LesAppCreateDB.Context
                         platforms[71],
                         platforms[72],
                     },
-                },
+                },  //15
                 new Game()
                 {
                     Name = "Need for Speed: Shift 2 Unleashed",
@@ -863,6 +962,38 @@ namespace LesAppCreateDB.Context
                     Platforms = new Platform[]
                     {
                         platforms[76],
+                        platforms[77],
+                        platforms[78],
+                        platforms[79],
+                        platforms[80],
+                    },
+                },
+                new Game()
+                {
+                    Name = "Need for Speed: Most Wanted 2012",
+                    Release = new DateTime(2012, 10, 30),
+                    Developers = new Developer[] { developers[14] },
+                    Platforms = new Platform[]
+                    {
+                        platforms[81],
+                        platforms[82],
+                        platforms[83],
+                        platforms[84],
+                        platforms[85],
+                    },
+                },
+                new Game()
+                {
+                    Name = "Need for Speed: Rivals",
+                    Release = new DateTime(2013, 11, 15),
+                    Developers = new Developer[] { developers[16] },
+                    Platforms = new Platform[]
+                    {
+                        platforms[86],
+                        platforms[87],
+                        platforms[88],
+                        platforms[89],
+                        platforms[90],
                     },
                 },
             };
