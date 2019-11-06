@@ -50,7 +50,7 @@ namespace LesApp1
                 db.NFS.Load();
 
                 #region first experement
-                // testing range of years when games was realised: 2007 < x < 2015
+                // testing range of years when games was realised: 2007 < x < 2012
                 {
                     Show($"\n Type of sorting is: where().where()", ConsoleColor.Green);
                     var query = db.Games
@@ -64,7 +64,7 @@ namespace LesApp1
                     }
                 }
 
-                // testing range of years when games was realised: 2007 < x < 2015
+                // testing range of years when games was realised: 2007 < x < 2012
                 {
                     Show($"\n Type of sorting is: where().tolist().where()", ConsoleColor.Green);
                     var query = db.Games
