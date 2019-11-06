@@ -41,6 +41,6 @@ namespace LesAppLib.Models
         }
 
         public override string ToString()
-            => $"Game publisher: {Publisher} in {Genre} genre, presented {Games.Count} games";
+            => $"Game publisher: {Publisher} in {Genre} genre, presented {Games?.Count ?? 0} games";
     }
 }

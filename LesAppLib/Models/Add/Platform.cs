@@ -36,6 +36,6 @@ namespace LesAppLib.Models.Add
         }
 
         public override string ToString()
-            => $"Platform for game: {Name}, has {Critics.Count} critics";
+            => $"Platform for game: {Name}, has {Critics?.Count ?? 0} critics";
     }
 }

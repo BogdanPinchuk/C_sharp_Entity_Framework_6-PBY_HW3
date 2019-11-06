@@ -51,7 +51,7 @@ namespace LesAppLib.Models
         }
 
         public override string ToString()
-            => $"Game: {Name}, was realesed {Release.ToShortDateString()} on {Platforms.Count} platforms";
+            => $"Game: {Name}, was realesed {Release.ToShortDateString()} on {Platforms?.Count ?? 0} platforms";
 
     }
 }

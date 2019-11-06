@@ -62,5 +62,15 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LesAppCreateDB\LesAppCreateDB.csproj">
+      <Project>{51D406A0-0D0B-4B85-96CE-4ECF073DAC41}</Project>
+      <Name>LesAppCreateDB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LesAppLib\LesAppLib.csproj">
+      <Project>{9F471129-D732-4B53-B710-77084B0384A2}</Project>
+      <Name>LesAppLib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
