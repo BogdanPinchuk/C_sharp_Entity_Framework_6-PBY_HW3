@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29418.71
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LesApp0", "LesApp0\LesApp0.csproj", "{FB01ED58-F1F2-4D8F-98E8-6005992387E0}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LesAppCRUD", "LesAppCRUD\LesAppCRUD.csproj", "{EE16B549-31EE-4D38-962F-D06263B66918}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LesAppCreateDB", "LesAppCreateDB\LesAppCreateDB.csproj", "{51D406A0-0D0B-4B85-96CE-4ECF073DAC41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LesApp1", "LesApp1\LesApp1.csproj", "{20B39195-66A3-4D9E-BACE-8A8EA65C9F7F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{51D406A0-0D0B-4B85-96CE-4ECF073DAC41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51D406A0-0D0B-4B85-96CE-4ECF073DAC41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51D406A0-0D0B-4B85-96CE-4ECF073DAC41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20B39195-66A3-4D9E-BACE-8A8EA65C9F7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20B39195-66A3-4D9E-BACE-8A8EA65C9F7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20B39195-66A3-4D9E-BACE-8A8EA65C9F7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20B39195-66A3-4D9E-BACE-8A8EA65C9F7F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -12,8 +12,6 @@ namespace LesApp0
 {
     class Program
     {
-        private static readonly Random rnd = new Random();
-
         static void Main()
         {
             // join unicode
@@ -22,7 +20,7 @@ namespace LesApp0
             // connect to DataBase
             using (NFSContext db = new NFSContext())
             {
-                // завантаження даних
+                // Load data
                 db.Critics.Load();
                 db.Developers.Load();
                 db.Directors.Load();
@@ -33,15 +31,14 @@ namespace LesApp0
                 // realization of First()
                 {
                     Console.WriteLine($"Developers are {db.Developers.Count()}");
-                    int temp = rnd.Next(0, db.Developers.Count());
-                    Console.WriteLine($"\tWe realize the: Find({temp})");
-                    Show(db.Developers.Find(temp).ToString(), ConsoleColor.Red);
+                    Console.WriteLine($"\tWe realize the: First()");
+                    Show(db.Developers.First().ToString(), ConsoleColor.Red);
                 }
 
                 // realization of FirstOrDefault()
                 {
                     Console.WriteLine($"\nDevelopers are {db.Developers.Count()}");
-                    int temp = rnd.Next(db.Developers.Count() + 1, db.Developers.Count() + 11);
+                    int temp = db.Developers.Count() + 1;
                     Console.WriteLine($"\tWe realize the: FirstOrDefault({temp})");
                     Show(db.Developers.FirstOrDefault(t => t.Id == temp)?.ToString() ?? "null", ConsoleColor.Red);
                 }
@@ -110,7 +107,7 @@ namespace LesApp0
         /// Present result in color
         /// </summary>
         /// <param name="s">string data</param>
-        /// <param name="color">console color</param>
+        /// <param name="color">color of text</param>
         private static void Show(string s, ConsoleColor color)
         {
             Console.ForegroundColor = color;
