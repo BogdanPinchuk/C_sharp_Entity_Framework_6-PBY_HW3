@@ -23,11 +23,11 @@ namespace LesAppLib.Models.Add
         /// <summary>
         /// Ігри
         /// </summary>
-        public ICollection<Game> Games { get; set; }
+        public virtual ICollection<Game> Games { get; set; }
         /// <summary>
         /// Критики
         /// </summary>
-        public ICollection<Critic> Critics { get; set; }
+        public virtual ICollection<Critic> Critics { get; set; }
 
         public Platform()
         {

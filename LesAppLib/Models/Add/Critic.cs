@@ -35,7 +35,7 @@ namespace LesAppLib.Models.Add
         }
 
         public override string ToString()
-            => $"Name of critic: {Name}, rate in {Scores * 100:N0}";
+            => $"Name of critic: {Name}, rate in {Scores * 100:N2}";
         
     }
 }
